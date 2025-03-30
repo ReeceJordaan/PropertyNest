@@ -1,5 +1,3 @@
-/* Reece Jordaan u23547104*/
-
 function getParameterByName(name) {
   name = name.replace(/[\[\]]/g, '\\$&');
   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(window.location.href);
@@ -35,7 +33,7 @@ function loadPage() {
 
     setTimeout(function() {
       populatePage();
-      setTheme(); // TODO: prevent flashbang on reload
+      setTheme();
       document.querySelector(".navigation").style.display = "flex";
       document.querySelector(".footer").style.display = "flex";
       document.querySelector("#loading").style.display = "none";

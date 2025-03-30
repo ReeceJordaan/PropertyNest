@@ -1,5 +1,3 @@
-<!--Reece Jordaan u23547104--> 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>

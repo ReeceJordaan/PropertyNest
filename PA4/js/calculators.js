@@ -1,5 +1,3 @@
-/* Reece Jordaan u23547104*/
-
 function loadPage() {
     if(localStorage.getItem("apikey") == null) {
         document.querySelector(".calculators").style.display = "none";
@@ -21,7 +19,7 @@ function loadPage() {
         document.querySelector(".theme-container").style.display = "flex";
 
         setTimeout(function() {
-            setTheme(); // TODO: prevent flashbang on reload
+            setTheme();
             document.querySelector(".navigation").style.display = "flex";
             document.querySelector(".footer").style.display = "flex";
             document.querySelector("#loading").style.display = "none";

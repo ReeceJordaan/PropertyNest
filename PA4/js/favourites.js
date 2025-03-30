@@ -20,7 +20,7 @@ function loadPage() {
 
         setTimeout(function() {
             populatePage();
-            setTheme(); // TODO: prevent flashbang on reload
+            setTheme();
             document.querySelector(".navigation").style.display = "flex";
             document.querySelector(".footer").style.display = "flex";
             document.querySelector("#loading").style.display = "none";

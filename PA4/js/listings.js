@@ -1,8 +1,3 @@
-/* Reece Jordaan u23547104*/
-
-// Reasoning: I chose synchronous AJAX calls because the sequential nature of synchronous AJAX calls increased the reliablility
-// of my website since I certain that the request would be finished by the time I need to use the returned data.
-
 var sortBtn = document.querySelector('.dropbtn');
 var sortBy = document.querySelector('.sortby');
 var filterBtn = document.querySelector('.filterbtn');

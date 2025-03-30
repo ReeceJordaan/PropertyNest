@@ -1,8 +1,3 @@
-/* Reece Jordaan u23547104*/
-
-// Reasoning: I chose synchronous AJAX calls because the sequential nature of synchronous AJAX calls increased the reliablility
-// of my website since I certain that the request would be finished by the time I need to use the returned data.
-
 var agentsCount = 500;
 
 function loadPage() {
@@ -27,7 +22,7 @@ function loadPage() {
 
         setTimeout(function() {
             populatePage();
-            setTheme(); // TODO: prevent flashbang on reload
+            setTheme();
             document.querySelector(".navigation").style.display = "flex";
             document.querySelector(".footer").style.display = "flex";
             document.querySelector("#loading").style.display = "none";
