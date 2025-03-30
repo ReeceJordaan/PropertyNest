@@ -1,0 +1,193 @@
+/* Reece Jordaan u23547104*/
+
+body{
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: #e7e5e4;
+  color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  box-shadow:-6px 6px 6px hsl(0deg 0% 0% / 0.3);
+    
+}
+
+.content {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.content__container {
+  position: relative;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+
+.content__container:before {
+  content: '[';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4FD1C5;
+  font-size: 42px;
+  line-height: 33px;
+  animation: opacity 2s infinite;
+}
+
+.content__container:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #4FD1C5;
+  font-size: 42px;
+  line-height: 33px;
+  animation: opacity 2s infinite;
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: change 10s infinite;
+}
+
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+.box.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+
+.btn-toolbar {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.button1, .button2, .button3, .button4, .button5 {
+  width: 120px;
+  height: 70px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  }
+
+a::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(120px + 12px);
+  min-height: calc(70px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button1:hover, .button1:focus, .button2:hover, .button2:focus, .button3:hover, .button3:focus, .button4:hover, .button4:focus, .button5:hover, .button5:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+a:hover::before, a:focus::before {
+  opacity: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.logo img {
+  max-width: 30%;
+}

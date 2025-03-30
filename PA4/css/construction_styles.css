@@ -1,0 +1,93 @@
+/* Reece Jordaan u23547104*/
+
+body {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box {
+  background-color: #e7e5e4;
+  border-radius: 25px;
+  box-shadow:-6px 6px 6px hsl(0deg 0% 0% / 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 70%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.logo img {
+    max-width: 30%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rotator {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 7rem;
+    height: 7rem;
+  }
+  
+  .orbit-icons {
+    animation: rotations 15s linear infinite;
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .orbit-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    animation: inherit;
+    animation-direction: reverse;
+    margin-left: 20px;
+  }
+  
+  .orbit-icon:nth-child(1) {
+    top: calc(50% + 4.5rem);
+    left: calc(50% - 2rem);
+  }
+  
+  .orbit-icon:nth-child(2) {
+    top: calc(50% - 2rem + 5rem * cos(120deg));
+    left: calc(50% - 2rem + 4rem * sin(120deg));
+  }
+  
+  .orbit-icon:nth-child(3) {
+    top: calc(50% - 2rem + 5rem * cos(240deg));
+    left: calc(50% - 2rem + 4rem * sin(240deg));
+  }
+  
+  .center-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rotations {
+    to {
+      transform: rotate(360deg);
+    }
+  }
