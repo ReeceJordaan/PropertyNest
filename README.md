@@ -1,5 +1,7 @@
 # PropertyNest - Real Estate Platform
 
+PropertyNest is a lightweight, framework-free real estate platform built with PHP/MySQL and vanilla JavaScript, offering property listings with advanced search/filter capabilities for buyers, renters, and agents. Features include user authentication, favorites system, mortgage calculators, and responsive design - all without external dependencies for optimal performance.
+
 ## Project Overview
 PropertyNest is a comprehensive real estate platform that enables users to browse, search, and manage property listings. The system provides:
 - Property listings with detailed information
